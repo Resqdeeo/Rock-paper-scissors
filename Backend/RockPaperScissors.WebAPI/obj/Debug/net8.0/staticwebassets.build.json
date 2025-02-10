@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "GmozE0xXjwIgIRbR9JK5u8O1lWGqgQshuWuB0YPtCO4=",
+  "Hash": "CT9yd4oUpnPnRBu1Elwb00xQW2C8It6iglVZWzquFVQ=",
   "Source": "RockPaperScissors.WebAPI",
   "BasePath": "_content/RockPaperScissors.WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

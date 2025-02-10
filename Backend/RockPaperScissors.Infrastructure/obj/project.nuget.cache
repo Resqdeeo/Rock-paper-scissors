@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "WEG+zmNalwcATRyZm/sIt22ypBohE3WDAPaiBf3FveIe/IfC2Pa4Qe6SPy3VE4YNSC1x+ZYdlG/GJk1UtU9YAw==",
+  "dgSpecHash": "FWu97gDN5JM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj",
+  "projectFilePath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Vlaze\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
-    "C:\\Users\\Vlaze\\.nuget\\packages\\microsoft.bcl.memory\\9.0.0\\microsoft.bcl.memory.9.0.0.nupkg.sha512",
-    "C:\\Users\\Vlaze\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\Vlaze\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
-    "C:\\Users\\Vlaze\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\Vlaze\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "C:\\Users\\Vlaze\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.4.0\\microsoft.identitymodel.abstractions.8.4.0.nupkg.sha512",
-    "C:\\Users\\Vlaze\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.4.0\\microsoft.identitymodel.jsonwebtokens.8.4.0.nupkg.sha512",
-    "C:\\Users\\Vlaze\\.nuget\\packages\\microsoft.identitymodel.logging\\8.4.0\\microsoft.identitymodel.logging.8.4.0.nupkg.sha512",
-    "C:\\Users\\Vlaze\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.4.0\\microsoft.identitymodel.tokens.8.4.0.nupkg.sha512",
-    "C:\\Users\\Vlaze\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.4.0\\system.identitymodel.tokens.jwt.8.4.0.nupkg.sha512"
+    "C:\\Users\\Marat\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\Marat\\.nuget\\packages\\microsoft.bcl.memory\\9.0.0\\microsoft.bcl.memory.9.0.0.nupkg.sha512",
+    "C:\\Users\\Marat\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Marat\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Marat\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Marat\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\Marat\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.4.0\\microsoft.identitymodel.abstractions.8.4.0.nupkg.sha512",
+    "C:\\Users\\Marat\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.4.0\\microsoft.identitymodel.jsonwebtokens.8.4.0.nupkg.sha512",
+    "C:\\Users\\Marat\\.nuget\\packages\\microsoft.identitymodel.logging\\8.4.0\\microsoft.identitymodel.logging.8.4.0.nupkg.sha512",
+    "C:\\Users\\Marat\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.4.0\\microsoft.identitymodel.tokens.8.4.0.nupkg.sha512",
+    "C:\\Users\\Marat\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.4.0\\system.identitymodel.tokens.jwt.8.4.0.nupkg.sha512"
   ],
   "logs": []
 }

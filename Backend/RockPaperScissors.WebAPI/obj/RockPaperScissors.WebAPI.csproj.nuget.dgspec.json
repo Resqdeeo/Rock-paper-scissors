@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\RockPaperScissors.WebAPI.csproj": {}
+    "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\RockPaperScissors.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj": {
+    "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj",
+        "projectUniqueName": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj",
         "projectName": "RockPaperScissors.Application",
-        "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj",
-        "packagesPath": "C:\\Users\\Vlaze\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\obj\\",
+        "projectPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj",
+        "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
+        "outputPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Vlaze\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj": {
-                "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj"
+              "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj": {
+                "projectPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj"
               }
             }
           }
@@ -43,7 +42,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -64,24 +69,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj": {
+    "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj",
+        "projectUniqueName": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj",
         "projectName": "RockPaperScissors.Domain",
-        "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj",
-        "packagesPath": "C:\\Users\\Vlaze\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\obj\\",
+        "projectPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj",
+        "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
+        "outputPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Vlaze\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -90,7 +95,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -103,7 +107,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -124,24 +134,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj": {
+    "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj",
+        "projectUniqueName": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj",
         "projectName": "RockPaperScissors.Infrastructure",
-        "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Vlaze\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\obj\\",
+        "projectPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
+        "outputPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Vlaze\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -150,18 +160,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj": {
-                "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj"
+              "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj": {
+                "projectPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj"
               },
-              "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj": {
-                "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj"
+              "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj": {
+                "projectPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj"
               }
             }
           }
@@ -170,7 +179,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -217,24 +232,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\RockPaperScissors.Persistence.csproj": {
+    "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\RockPaperScissors.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\RockPaperScissors.Persistence.csproj",
+        "projectUniqueName": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\RockPaperScissors.Persistence.csproj",
         "projectName": "RockPaperScissors.Persistence",
-        "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\RockPaperScissors.Persistence.csproj",
-        "packagesPath": "C:\\Users\\Vlaze\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\obj\\",
+        "projectPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\RockPaperScissors.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
+        "outputPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Vlaze\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -243,18 +258,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj": {
-                "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj"
+              "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj": {
+                "projectPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj"
               },
-              "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj"
+              "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj": {
+                "projectPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj"
               }
             }
           }
@@ -263,7 +277,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -310,24 +330,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\RockPaperScissors.WebAPI.csproj": {
+    "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\RockPaperScissors.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\RockPaperScissors.WebAPI.csproj",
+        "projectUniqueName": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\RockPaperScissors.WebAPI.csproj",
         "projectName": "RockPaperScissors.WebAPI",
-        "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\RockPaperScissors.WebAPI.csproj",
-        "packagesPath": "C:\\Users\\Vlaze\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\obj\\",
+        "projectPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\RockPaperScissors.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
+        "outputPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Vlaze\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -336,24 +356,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj": {
-                "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj"
+              "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj": {
+                "projectPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj"
               },
-              "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj": {
-                "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj"
+              "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj": {
+                "projectPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj"
               },
-              "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj"
+              "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj": {
+                "projectPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj"
               },
-              "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\RockPaperScissors.Persistence.csproj": {
-                "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Exam\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\RockPaperScissors.Persistence.csproj"
+              "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\RockPaperScissors.Persistence.csproj": {
+                "projectPath": "D:\\development\\projects\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\RockPaperScissors.Persistence.csproj"
               }
             }
           }
@@ -362,7 +381,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -410,7 +435,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

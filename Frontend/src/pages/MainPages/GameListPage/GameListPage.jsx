@@ -1,0 +1,125 @@
+import  { useState, useEffect } from 'react';
+import './GameListPage.css';
+
+// Пример данных игр
+const games = [
+    { id: 1, username: 'User1', createdAt: '2023-10-01T10:00:00Z', status: 'not_started' },
+    { id: 2, username: 'User2', createdAt: '2023-09-25T12:00:00Z', status: 'started' },
+    { id: 3, username: 'User3', createdAt: '2023-10-05T14:00:00Z', status: 'not_started' },
+    { id: 4, username: 'User4', createdAt: '2023-09-30T16:00:00Z', status: 'completed' },
+    { id: 5, username: 'User5', createdAt: '2023-09-25T12:00:00Z', status: 'started' },
+    { id: 6, username: 'User6', createdAt: '2023-10-05T14:00:00Z', status: 'not_started' },
+    { id: 7, username: 'User7', createdAt: '2023-09-30T16:00:00Z', status: 'completed' },
+    // Добавьте больше данных для тестирования
+];
+
+// Пример данных рейтинга
+const ratings = [
+    { username: 'User1', rating: 1500 },
+    { username: 'User2', rating: 1600 },
+    { username: 'User3', rating: 1450 },
+    { username: 'User4', rating: 1700 },
+    { username: 'User5', rating: 1300 },
+    { username: 'User6', rating: 1550 },
+    { username: 'User7', rating: 1650 },
+];
+
+const GameListPage = () => {
+    const [gameList, setGameList] = useState([]);
+    const [showRatingModal, setShowRatingModal] = useState(false);
+    const [showCreateModal, setShowCreateModal] = useState(false);
+    const [maxRating, setMaxRating] = useState('');
+
+    useEffect(() => {
+        // Сортировка игр по дате создания и статусу
+        const sortedGames = [...games].sort((a, b) => {
+            const dateDiff = new Date(b.createdAt) - new Date(a.createdAt);
+            if (dateDiff !== 0) return dateDiff;
+            return a.status.localeCompare(b.status);
+        });
+        setGameList(sortedGames);
+    }, []);
+
+    const handleCloseRatingModal = () => {
+        setShowRatingModal(false);
+    };
+
+    const handleCloseCreateModal = () => {
+        setShowCreateModal(false);
+    };
+
+    const handleCreateGame = () => {
+        // Здесь можно добавить логику для отправки данных на сервер
+        console.log('Game created with max rating:', maxRating);
+        setShowCreateModal(false);
+    };
+
+    return (
+        <div className="game-list-container">
+            <h2 className="game-list-title">Game List</h2>
+            <div className="game-grid">
+                {gameList.map((game) => (
+                    <div key={game.id} className="game-item">
+                        <div className="game-info">
+                            <p>ID: {game.id}</p>
+                            <p>Creator: {game.username}</p>
+                            <p>Created At: {new Date(game.createdAt).toLocaleString()}</p>
+                            <p>Status: {game.status.charAt(0).toUpperCase() + game.status.slice(1).replace('_', ' ')}</p>
+                        </div>
+                        <button
+                            className={`join-button ${game.status !== 'not_started' ? 'disabled' : ''}`}
+                            disabled={game.status !== 'not_started'}
+                        >
+                            Join
+                        </button>
+                    </div>
+                ))}
+            </div>
+            <div className="floating-buttons">
+                <button className="create-button" onClick={() => setShowCreateModal(true)}>Create Game</button>
+                <button className="rating-button" onClick={() => setShowRatingModal(true)}>Rating</button>
+            </div>
+
+            {showRatingModal && (
+                <div className="modal-overlay">
+                    <div className="modal-content">
+                        <h2>Player Ratings</h2>
+                        <ul className="rating-list">
+                            {ratings.map((rating, index) => (
+                                <li key={index} className="rating-item">
+                                    <span>{rating.username}</span>
+                                    <span>{rating.rating}</span>
+                                </li>
+                            ))}
+                        </ul>
+                        <button className="close-button" onClick={handleCloseRatingModal}>Close</button>
+                    </div>
+                </div>
+            )}
+
+            {showCreateModal && (
+                <div className="modal-overlay">
+                    <div className="modal-content">
+                        <h2>Create New Game</h2>
+                        <div className="form-group">
+                            <label htmlFor="maxRating">Maximum Rating</label>
+                            <input
+                                type="number"
+                                id="maxRating"
+                                value={maxRating}
+                                onChange={(e) => setMaxRating(e.target.value)}
+                                required
+                            />
+                        </div>
+                        <div className="modal-buttons">
+                            <button className="create-button" onClick={handleCreateGame}>Create Game</button>
+                            <button className="cancel-button" onClick={handleCloseCreateModal}>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+};
+
+export default GameListPage;

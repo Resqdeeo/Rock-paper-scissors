@@ -19,3 +19,25 @@ C:\Users\Vlaze\OneDrive\Рабочий стол\Exam\Rock-paper-scissors\Backend
 C:\Users\Vlaze\OneDrive\Рабочий стол\Exam\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\RockPaperScissors.Persistence.pdb
 C:\Users\Vlaze\OneDrive\Рабочий стол\Exam\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\RockPaperScissors.Persistence.genruntimeconfig.cache
 C:\Users\Vlaze\OneDrive\Рабочий стол\Exam\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\ref\RockPaperScissors.Persistence.dll
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\bin\Debug\net8.0\RockPaperScissors.Persistence.deps.json
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\bin\Debug\net8.0\RockPaperScissors.Persistence.runtimeconfig.json
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\bin\Debug\net8.0\RockPaperScissors.Persistence.dll
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\bin\Debug\net8.0\RockPaperScissors.Persistence.pdb
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\bin\Debug\net8.0\RockPaperScissors.Application.dll
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\bin\Debug\net8.0\RockPaperScissors.Domain.dll
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\bin\Debug\net8.0\RockPaperScissors.Infrastructure.dll
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\bin\Debug\net8.0\RockPaperScissors.Domain.pdb
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\bin\Debug\net8.0\RockPaperScissors.Infrastructure.pdb
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\bin\Debug\net8.0\RockPaperScissors.Application.pdb
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\RockPaperScissors.Persistence.csproj.AssemblyReference.cache
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\RockPaperScissors.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\RockPaperScissors.Persistence.AssemblyInfoInputs.cache
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\RockPaperScissors.Persistence.AssemblyInfo.cs
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\RockPaperScissors.Persistence.csproj.CoreCompileInputs.cache
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\RockPaperScissors.Persistence.sourcelink.json
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\RockPape.6B38A938.Up2Date
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\RockPaperScissors.Persistence.dll
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\refint\RockPaperScissors.Persistence.dll
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\RockPaperScissors.Persistence.pdb
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\RockPaperScissors.Persistence.genruntimeconfig.cache
+D:\development\projects\Rock-paper-scissors\Backend\RockPaperScissors.Persistence\obj\Debug\net8.0\ref\RockPaperScissors.Persistence.dll
