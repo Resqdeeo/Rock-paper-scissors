@@ -1,30 +1,38 @@
 import  { useState } from 'react';
 import './SignUpPage.css';
+import useAuth from "../../../hooks/useAuth.js";
+import {useNavigate} from "react-router-dom";
 
 const SignUpPage = () => {
-    const [formData, setFormData] = useState({
-        username: '',
-        password: '',
-        confirmPassword: ''
-    });
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const { loading, register } = useAuth();
+    const navigate = useNavigate();
 
     const [error, setError] = useState('');
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value
-        });
-    };
-
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        if (formData.password !== formData.confirmPassword) {
+
+        if (!username || !password || !confirmPassword) {
+            setError('Please fill in all fields');
+            return;
+        } else if (password !== confirmPassword) {
             setError('Passwords do not match');
+            return;
+        } else { setError('') }
+
+        const userData = {
+            username: username,
+            password: password,
+        };
+
+        const response = await register(userData);
+        if (response.error) {
+            setError(response.error);
         } else {
-            setError('');
-            console.log('Form submitted:', formData);
+            navigate("/")
         }
     };
 
@@ -33,42 +41,39 @@ const SignUpPage = () => {
             <div className="form-box">
                 <h2>Sign up</h2>
                 <form onSubmit={handleSubmit}>
-                    <div className="form-group">
+                    <div className="form-group-sign-up">
                         <label htmlFor="username">Username</label>
                         <input
                             type="text"
                             id="username"
                             name="username"
-                            value={formData.username}
-                            onChange={handleChange}
+                            onChange={(e) => setUsername(e.target.value)}
                             required
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group-sign-up">
                         <label htmlFor="password">Password</label>
                         <input
                             type="password"
                             id="password"
                             name="password"
-                            value={formData.password}
-                            onChange={handleChange}
+                            onChange={(e) => setPassword(e.target.value)}
                             required
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group-sign-up">
                         <label htmlFor="confirmPassword">Confirm Password</label>
                         <input
                             type="password"
                             id="confirmPassword"
                             name="confirmPassword"
-                            value={formData.confirmPassword}
-                            onChange={handleChange}
+                            onChange={(e) => setConfirmPassword(e.target.value)}
                             required
                         />
                     </div>
                     {error && <p className="error-message">{error}</p>}
                     <button type="submit" className="submit-button">
-                        Sign up
+                        {loading ? "Wait..." : "Continue"}
                     </button>
                 </form>
                 <p className="sign-in-link">Already have an account? <a href="/signin">Sign in</a></p>
