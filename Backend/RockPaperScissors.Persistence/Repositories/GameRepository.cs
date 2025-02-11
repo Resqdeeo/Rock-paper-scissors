@@ -39,4 +39,15 @@ public class GameRepository : IGameRepository
         _context.Games.Update(game);
         await _context.SaveChangesAsync();
     }
+    
+    public async Task<List<Game>> GetPagedGamesAsync(int page, int pageSize)
+    {
+        return await _context.Games
+            .Include(g => g.Creator) // Подгружаем данные о создателе игры
+            .OrderBy(g => g.Status == "waiting" ? 0 : g.Status == "in_progress" ? 1 : 2) // Сначала waiting, затем in_progress, затем finished
+            .ThenByDescending(g => g.CreatedAt) // Среди них сортируем по дате создания (новые выше)
+            .Skip((page - 1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync();
+    }
 }

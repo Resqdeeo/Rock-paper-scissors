@@ -23,20 +23,20 @@
     color: #333;
 }
 
-.form-group {
+.form-group-sign-in {
     margin-bottom: 15px;
     text-align: left;
 }
 
-.form-group label {
+.form-group-sign-in label {
     display: block;
     margin-bottom: 5px;
     font-size: 14px;
     color: #555;
 }
 
-.form-group input {
-    width: 100%;
+.form-group-sign-in input {
+    width: 328px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
