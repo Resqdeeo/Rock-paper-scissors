@@ -67,8 +67,7 @@ const GameListPage = () => {
                             <p>Status: {game.status.charAt(0).toUpperCase() + game.status.slice(1).replace('_', ' ')}</p>
                         </div>
                         <button
-                            className={`join-button ${game.status !== 'not_started' ? 'disabled' : ''}`}
-                            disabled={game.status !== 'not_started'}
+                            className={`join-button`}
                         >
                             Join
                         </button>
