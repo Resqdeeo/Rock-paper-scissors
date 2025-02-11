@@ -32,7 +32,7 @@ const SignUpPage = () => {
         if (response.error) {
             setError(response.error);
         } else {
-            navigate("/")
+            navigate("/gamelist")
         }
     };
 

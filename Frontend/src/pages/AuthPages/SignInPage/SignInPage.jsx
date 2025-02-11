@@ -28,7 +28,7 @@ const SignInPage = () => {
             if (result.error) {
                 setError(result.error);
             } else {
-                navigate("/")
+                navigate("/gamelist")
             }
         });
     };
