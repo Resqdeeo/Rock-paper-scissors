@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pfAoQ1LIhxmEetQobN66YXocq1WsrHfGbukxpIxPkDPj3LNELF42yvREufGBmG+fcOoRcOFLeSptIc2KdDltkA==",
+  "dgSpecHash": "bIYLALdOyNw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj",
+  "projectFilePath": "D:\\development\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

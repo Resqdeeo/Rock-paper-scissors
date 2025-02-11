@@ -48,6 +48,20 @@ services:
       - rockpaperscissors_network
     volumes:
       - data_protection:/root/.aspnet/DataProtection-Keys
+    
+  frontend:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    restart: always
+    ports:
+      - "5173:80"
+    networks:
+      - rockpaperscissors_network
+    depends_on:
+      - webapi
+      
 
     
 
