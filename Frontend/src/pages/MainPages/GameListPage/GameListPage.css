@@ -50,11 +50,6 @@
     background-color: #7b1fa2;
 }
 
-.join-button.disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-
 .floating-buttons {
     position: fixed;
     bottom: 20px;
