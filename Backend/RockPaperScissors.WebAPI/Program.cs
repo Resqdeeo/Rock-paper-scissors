@@ -1,3 +1,6 @@
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
+using MongoDB.Bson.Serialization.Serializers;
 using RockPaperScissors.Persistence.MigrationTools;
 using RockPaperScissors.WebAPI.Configurations;
 
@@ -7,6 +10,7 @@ MongoConfiguration.AddMongoDb(builder.Services, builder.Configuration);
 AuthConfiguration.AddAuth(builder.Services, builder.Configuration);
 PostgreConfiguration.AddDatabase(builder.Services, builder.Configuration);
 DependencyInjectionConfiguration.AddApplicationServices(builder.Services);
+BsonSerializer.RegisterSerializer(new GuidSerializer(GuidRepresentation.Standard));
 
 builder.Services.AddControllers();
 

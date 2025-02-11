@@ -22,3 +22,15 @@ C:\Users\Vlaze\OneDrive\Рабочий стол\ExamRock\Rock-paper-scissors\Bac
 C:\Users\Vlaze\OneDrive\Рабочий стол\ExamRock\Rock-paper-scissors\Backend\RockPaperScissors.Domain\obj\Debug\net8.0\refint\RockPaperScissors.Domain.dll
 C:\Users\Vlaze\OneDrive\Рабочий стол\ExamRock\Rock-paper-scissors\Backend\RockPaperScissors.Domain\obj\Debug\net8.0\RockPaperScissors.Domain.pdb
 C:\Users\Vlaze\OneDrive\Рабочий стол\ExamRock\Rock-paper-scissors\Backend\RockPaperScissors.Domain\obj\Debug\net8.0\ref\RockPaperScissors.Domain.dll
+C:\Users\Marat\Desktop\Rock-paper-scissors\Backend\RockPaperScissors.Domain\bin\Debug\net8.0\RockPaperScissors.Domain.deps.json
+C:\Users\Marat\Desktop\Rock-paper-scissors\Backend\RockPaperScissors.Domain\bin\Debug\net8.0\RockPaperScissors.Domain.dll
+C:\Users\Marat\Desktop\Rock-paper-scissors\Backend\RockPaperScissors.Domain\bin\Debug\net8.0\RockPaperScissors.Domain.pdb
+C:\Users\Marat\Desktop\Rock-paper-scissors\Backend\RockPaperScissors.Domain\obj\Debug\net8.0\RockPaperScissors.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marat\Desktop\Rock-paper-scissors\Backend\RockPaperScissors.Domain\obj\Debug\net8.0\RockPaperScissors.Domain.AssemblyInfoInputs.cache
+C:\Users\Marat\Desktop\Rock-paper-scissors\Backend\RockPaperScissors.Domain\obj\Debug\net8.0\RockPaperScissors.Domain.AssemblyInfo.cs
+C:\Users\Marat\Desktop\Rock-paper-scissors\Backend\RockPaperScissors.Domain\obj\Debug\net8.0\RockPaperScissors.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Marat\Desktop\Rock-paper-scissors\Backend\RockPaperScissors.Domain\obj\Debug\net8.0\RockPaperScissors.Domain.sourcelink.json
+C:\Users\Marat\Desktop\Rock-paper-scissors\Backend\RockPaperScissors.Domain\obj\Debug\net8.0\RockPaperScissors.Domain.dll
+C:\Users\Marat\Desktop\Rock-paper-scissors\Backend\RockPaperScissors.Domain\obj\Debug\net8.0\refint\RockPaperScissors.Domain.dll
+C:\Users\Marat\Desktop\Rock-paper-scissors\Backend\RockPaperScissors.Domain\obj\Debug\net8.0\RockPaperScissors.Domain.pdb
+C:\Users\Marat\Desktop\Rock-paper-scissors\Backend\RockPaperScissors.Domain\obj\Debug\net8.0\ref\RockPaperScissors.Domain.dll
