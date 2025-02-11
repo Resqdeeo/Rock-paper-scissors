@@ -33,7 +33,7 @@ public class LoginCommandHandler : ICommandHandler<LoginCommand, LoginResponse>
         }
 
         // Генерация JWT
-        var token = _jwtService.GenerateToken(command.RequestDto.Username);
+        var token = _jwtService.GenerateToken(user.Id, command.RequestDto.Username);
 
         return new LoginResponse { Token = token };
     }
