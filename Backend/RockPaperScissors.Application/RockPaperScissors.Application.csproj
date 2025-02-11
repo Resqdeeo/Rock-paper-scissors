@@ -10,4 +10,8 @@
       <ProjectReference Include="..\RockPaperScissors.Domain\RockPaperScissors.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="MongoDB.Driver" Version="3.1.0" />
+    </ItemGroup>
+
 </Project>

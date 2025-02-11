@@ -8,4 +8,5 @@ public interface IGameRepository
     Task<IEnumerable<Game>> GetAvailableGamesAsync();
     Task AddAsync(Game game);
     Task UpdateAsync(Game game);
+    Task<List<Game>> GetPagedGamesAsync(int page, int pageSize);
 }
