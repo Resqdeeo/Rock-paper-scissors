@@ -35,7 +35,6 @@ const useAuth = () => {
         return await axiosToBackend.post(`/Auth/login`, userData)
             .then((response) => {
                 if (response.status === 200) {
-                    authStore.login(response.data);
                     return {error: null };
                 } else {
                     return {error: response.data };

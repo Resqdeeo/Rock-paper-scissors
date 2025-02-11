@@ -8,6 +8,7 @@ export const axiosToBackend = axios.create({
 
 axiosToBackend.interceptors.request.use((config) => {
     config.headers.Authorization = `Bearer ${localStorage.getItem('token')}`;
+    config.withCredentials = true;
     return config;
 })
 

@@ -4,11 +4,18 @@ import {toast} from "react-toastify";
 class AuthStore {
     isAuthenticated = !!localStorage.getItem('token');
     login = (token) => {
-        toast.info("You have successfully logged in, " /* + localStorage.getItem("Username") */,
-            {toastId: "LogInInfo"})
+        if (!token || typeof token !== "string") {
+            console.error("Invalid token:", token);
+            return;
+        }
+        toast.info("You have successfully logged in", { toastId: "LogInInfo" });
         this.isAuthenticated = true;
-        localStorage.setItem('token', token);
-    }
+        console.log(token);
+        console.log(token.toString());
+        console.log("запись");
+        localStorage.setItem('token', token.toString());
+        console.log("Logged in", localStorage.getItem('token'));
+    };
     logout = () => {
         toast.info("You have successfully logged out", {toastId: "LogOutInfo"})
         this.isAuthenticated = false;
