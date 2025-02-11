@@ -1,17 +1,50 @@
 version: "3.8"
 
 services:
-  postgres:
-    image: postgres:16
-    container_name: postgres-db
+  frontend:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "5173:80"
+    networks:
+      - rockpaperscissors_network
+    depends_on:
+      - webapi
+
+
+  webapi:
+    build:
+      context: ./Backend
+      dockerfile: RockPaperScissors.WebAPI/Dockerfile
+    container_name: RockPaperScissors.WebAPI
+    depends_on:
+      - db
+      - mongo
+    environment:
+      ConnectionStrings__PostgresConnection: "Host=db;Port=5432;Username=postgres;Password=password;Database=Rpsgame;"
+      MongoSettings__ConnectionString: "mongodb://mongo:27017"
+      MongoSettings__DatabaseName: "RockPaperScissorsDB"
+    ports:
+      - "8080:8080"
+    networks:
+      - rockpaperscissors_network
+    volumes:
+      - data_protection:/root/.aspnet/DataProtection-Keys
     restart: always
+
+
+  db:
+    image: postgres:latest
+    container_name: RockPaperScissors.PostgreSQL
     environment: 
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
     ports:
       - "5432:5432"
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - db_data:/var/lib/postgresql/data
     networks:
       - rockpaperscissors_network
 
@@ -24,50 +57,14 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - mongo-data:/data/db
+      - mongo_data:/data/db
     networks:
       - rockpaperscissors_network
-
-
-  webapi:
-    build:
-      context: ./Backend
-      dockerfile: RockPaperScissors.WebAPI/Dockerfile
-    container_name: webapi
-    restart: always
-    depends_on:
-      - postgres
-      - mongo
-    environment:
-      ConnectionStrings__Postgres: "Host=posgres;Port=5432;Database=rpsgame;Username=postgres;Password=password"
-      MongoSetting__ConnectionString: "mongodb://mongo:27017"
-      MongoSettings__DatabaseName: "RockPaperScissorsDB"
-    ports:
-      - "8080:8080"
-    networks:
-      - rockpaperscissors_network
-    volumes:
-      - data_protection:/root/.aspnet/DataProtection-Keys
-    
-  frontend:
-    build:
-      context: ./Frontend
-      dockerfile: Dockerfile
-    container_name: frontend
-    restart: always
-    ports:
-      - "5173:80"
-    networks:
-      - rockpaperscissors_network
-    depends_on:
-      - webapi
-      
-
     
 
 volumes:
-  postgres-data:
-  mongo-data:
+  db_data:
+  mongo_data:
   data_protection:
 
 networks:

@@ -1,6 +1,4 @@
-﻿using MongoDB.Driver;
-using RockPaperScissors.Application.Services;
-using RockPaperScissors.Domain.Repositories;
+﻿using RockPaperScissors.Domain.Repositories;
 using RockPaperScissors.Persistence;
 using RockPaperScissors.Persistence.Repositories;
 
@@ -10,7 +8,7 @@ public static class MongoConfiguration
 {
     public static IServiceCollection AddMongoDb(IServiceCollection services, IConfiguration configuration)
     {
-        var connectionString = configuration.GetConnectionString("MongoConnection");
+        var connectionString = configuration["MongoSettings:ConnectionString"];
         var databaseName = configuration["MongoSettings:DatabaseName"];
         
         services.AddSingleton<MongoDbContext>(serviceProvider => 

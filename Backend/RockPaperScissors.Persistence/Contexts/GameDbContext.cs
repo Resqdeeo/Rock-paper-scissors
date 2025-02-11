@@ -1,9 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RockPaperScissors.Application.Services;
 using RockPaperScissors.Domain.Entities;
 
 namespace RockPaperScissors.Persistence;
 
-public class GameDbContext : DbContext
+public class GameDbContext : DbContext, IDbContext
 {
     public GameDbContext(DbContextOptions<GameDbContext> options) : base(options) { }
 
@@ -17,7 +18,7 @@ public class GameDbContext : DbContext
 
         modelBuilder.Entity<User>()
             .HasIndex(u => u.Username)
-            .IsUnique(); // Уникальность username
+            .IsUnique(); 
 
         modelBuilder.Entity<Game>()
             .HasOne(g => g.Creator)
