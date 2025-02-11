@@ -833,6 +833,19 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Npgsql/8.0.6": {
         "type": "package",
         "dependencies": {
@@ -864,6 +877,23 @@
         },
         "runtime": {
           "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "RabbitMQ.Client/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Pipelines": "8.0.0",
+          "System.Threading.RateLimiting": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/RabbitMQ.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/RabbitMQ.Client.dll": {
             "related": ".xml"
           }
         }
@@ -1113,20 +1143,20 @@
           }
         }
       },
-      "System.IO.Pipelines/6.0.3": {
+      "System.IO.Pipelines/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.IO.Pipelines.dll": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Memory/4.5.5": {
@@ -1260,6 +1290,22 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "System.Threading.RateLimiting/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Threading.RateLimiting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Threading.RateLimiting.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "ZstdSharp.Port/0.7.3": {
         "type": "package",
         "compile": {
@@ -1273,7 +1319,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.12",
           "MongoDB.Driver": "3.1.0",
+          "RabbitMQ.Client": "7.0.0",
           "RockPaperScissors.Domain": "1.0.0"
         },
         "compile": {
@@ -1302,6 +1350,7 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
           "Microsoft.IdentityModel.JsonWebTokens": "8.4.0",
           "Microsoft.IdentityModel.Tokens": "8.4.0",
+          "Newtonsoft.Json": "13.0.3",
           "RockPaperScissors.Application": "1.0.0",
           "RockPaperScissors.Domain": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.4.0"
@@ -2862,6 +2911,36 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "Npgsql/8.0.6": {
       "sha512": "KaS6CY5kY2Sd0P00MSeFcOI3t2DiQ4UWG8AuRpVOUeDWITOKfoEEG91DP3cmT6aerixPkjwKgXxnpDxIkDpO6g==",
       "type": "package",
@@ -2898,6 +2977,23 @@
         "npgsql.entityframeworkcore.postgresql.8.0.11.nupkg.sha512",
         "npgsql.entityframeworkcore.postgresql.nuspec",
         "postgresql.png"
+      ]
+    },
+    "RabbitMQ.Client/7.0.0": {
+      "sha512": "8YJz22mOSMtkbIVuVSz2HbJwbpKwRoXQ1uqbczDUt1w1Ds8dxFs6dkV/oZ8AlTmkErZjtQelHv+oBu52ud00WA==",
+      "type": "package",
+      "path": "rabbitmq.client/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/RabbitMQ.Client.dll",
+        "lib/net8.0/RabbitMQ.Client.xml",
+        "lib/netstandard2.0/RabbitMQ.Client.dll",
+        "lib/netstandard2.0/RabbitMQ.Client.xml",
+        "rabbitmq.client.7.0.0.nupkg.sha512",
+        "rabbitmq.client.nuspec"
       ]
     },
     "SharpCompress/0.30.1": {
@@ -3248,27 +3344,31 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
-    "System.IO.Pipelines/6.0.3": {
-      "sha512": "ryTgF+iFkpGZY1vRQhfCzX0xTdlV3pyaTTqRu2ETbEv+HlV7O6y7hyQURnghNIXvctl5DuZ//Dpks6HdL/Txgw==",
+    "System.IO.Pipelines/8.0.0": {
+      "sha512": "FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
       "type": "package",
-      "path": "system.io.pipelines/6.0.3",
+      "path": "system.io.pipelines/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Pipelines.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.IO.Pipelines.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.IO.Pipelines.dll",
-        "lib/net461/System.IO.Pipelines.xml",
+        "lib/net462/System.IO.Pipelines.dll",
+        "lib/net462/System.IO.Pipelines.xml",
         "lib/net6.0/System.IO.Pipelines.dll",
         "lib/net6.0/System.IO.Pipelines.xml",
-        "lib/netcoreapp3.1/System.IO.Pipelines.dll",
-        "lib/netcoreapp3.1/System.IO.Pipelines.xml",
+        "lib/net7.0/System.IO.Pipelines.dll",
+        "lib/net7.0/System.IO.Pipelines.xml",
+        "lib/net8.0/System.IO.Pipelines.dll",
+        "lib/net8.0/System.IO.Pipelines.xml",
         "lib/netstandard2.0/System.IO.Pipelines.dll",
         "lib/netstandard2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.6.0.3.nupkg.sha512",
+        "system.io.pipelines.8.0.0.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -3512,6 +3612,35 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Threading.RateLimiting/8.0.0": {
+      "sha512": "7mu9v0QDv66ar3DpGSZHg9NuNcxDaaAcnMULuZlaTpP9+hwXhrxNGsF5GmLkSHxFdb5bBc1TzeujsRgTrPWi+Q==",
+      "type": "package",
+      "path": "system.threading.ratelimiting/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Threading.RateLimiting.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Threading.RateLimiting.targets",
+        "lib/net462/System.Threading.RateLimiting.dll",
+        "lib/net462/System.Threading.RateLimiting.xml",
+        "lib/net6.0/System.Threading.RateLimiting.dll",
+        "lib/net6.0/System.Threading.RateLimiting.xml",
+        "lib/net7.0/System.Threading.RateLimiting.dll",
+        "lib/net7.0/System.Threading.RateLimiting.xml",
+        "lib/net8.0/System.Threading.RateLimiting.dll",
+        "lib/net8.0/System.Threading.RateLimiting.xml",
+        "lib/netstandard2.0/System.Threading.RateLimiting.dll",
+        "lib/netstandard2.0/System.Threading.RateLimiting.xml",
+        "system.threading.ratelimiting.8.0.0.nupkg.sha512",
+        "system.threading.ratelimiting.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "ZstdSharp.Port/0.7.3": {
       "sha512": "U9Ix4l4cl58Kzz1rJzj5hoVTjmbx1qGMwzAcbv1j/d3NzrFaESIurQyg+ow4mivCgkE3S413y+U9k4WdnEIkRA==",
       "type": "package",
@@ -3565,23 +3694,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Marat\\.nuget\\packages\\": {},
+    "C:\\Users\\Vlaze\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\development\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\RockPaperScissors.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\ExamRock\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\RockPaperScissors.WebAPI.csproj",
       "projectName": "RockPaperScissors.WebAPI",
-      "projectPath": "D:\\development\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\RockPaperScissors.WebAPI.csproj",
-      "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
-      "outputPath": "D:\\development\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\obj\\",
+      "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\ExamRock\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\RockPaperScissors.WebAPI.csproj",
+      "packagesPath": "C:\\Users\\Vlaze\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\ExamRock\\Rock-paper-scissors\\Backend\\RockPaperScissors.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Marat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vlaze\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3590,23 +3719,24 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\development\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj": {
-              "projectPath": "D:\\development\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj"
+            "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\ExamRock\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj": {
+              "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\ExamRock\\Rock-paper-scissors\\Backend\\RockPaperScissors.Application\\RockPaperScissors.Application.csproj"
             },
-            "D:\\development\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj": {
-              "projectPath": "D:\\development\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj"
+            "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\ExamRock\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj": {
+              "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\ExamRock\\Rock-paper-scissors\\Backend\\RockPaperScissors.Domain\\RockPaperScissors.Domain.csproj"
             },
-            "D:\\development\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj": {
-              "projectPath": "D:\\development\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj"
+            "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\ExamRock\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\ExamRock\\Rock-paper-scissors\\Backend\\RockPaperScissors.Infrastructure\\RockPaperScissors.Infrastructure.csproj"
             },
-            "D:\\development\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\RockPaperScissors.Persistence.csproj": {
-              "projectPath": "D:\\development\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\RockPaperScissors.Persistence.csproj"
+            "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\ExamRock\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\RockPaperScissors.Persistence.csproj": {
+              "projectPath": "C:\\Users\\Vlaze\\OneDrive\\Рабочий стол\\ExamRock\\Rock-paper-scissors\\Backend\\RockPaperScissors.Persistence\\RockPaperScissors.Persistence.csproj"
             }
           }
         }
@@ -3615,13 +3745,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -3669,7 +3793,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

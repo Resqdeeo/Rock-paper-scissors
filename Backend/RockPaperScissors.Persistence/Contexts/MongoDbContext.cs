@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-using MongoDB.Driver;
-using RockPaperScissors.Application.Services;
+﻿using MongoDB.Driver;
 using RockPaperScissors.Domain.Entities;
 
 namespace RockPaperScissors.Persistence;
